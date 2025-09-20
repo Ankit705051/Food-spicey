@@ -1,0 +1,223 @@
+/* General styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+ 
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+  line-height: 1.6;
+
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ff7043;
+  padding: 1rem 2rem;
+  color: #fff;
+  position: sticky;
+  top: 0;
+}
+
+header .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+header .logo span {
+  color: #ffe082;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+nav li {
+  margin-left: 1.5rem;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+nav a:hover {
+  opacity: 0.7;
+}
+
+/* Hero */
+.hero {
+  background: url('./assets/f1.png') center/cover no-repeat;
+  color: #fff;
+  text-align: center;
+  padding: 8rem 2rem;
+}
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+.hero-content button {
+  padding: 0.8rem 1.5rem;
+  background: #ffe082;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 3rem;
+}
+.hero-content button:hover {
+  background: #ffd54f;
+}
+
+/* Products */
+.products, .recipes, .contact {
+  padding: 2rem 2rem;
+  text-align: center;
+}
+.products h2, .recipes h2, .contact h2 {
+  margin-bottom: 2rem;
+  color: #ff7043;
+}
+.product-grid, .recipe-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(180px,1fr));
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+.product-card, .recipe-card {
+  border-radius: 10px;
+  padding: 1rem;
+  background: linear-gradient(120deg,rgb(224, 184, 110),rgb(112, 188, 211));
+  transition: transform 0.2s;
+}
+.product-card:hover, .recipe-card:hover {
+  transform: translateY(-5px);
+}
+.product-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+
+
+/* Recipe details */
+.recipe-details {
+  margin-top: 2rem;
+  padding: 2rem;
+  border: 1px solid #811f1f;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(45deg,rgb(240, 204, 138), #b17fad);
+  background: url(./assets/bg.jpg) center/cover no-repeat;
+  min-height: 200px;
+  max-height: 400px;
+  font-weight: 200px;
+  font-size: 20px;
+
+  
+}
+.hidden { display: none; }
+.recipe-details:hover{
+  transition: 0.3s;
+    transform: translateY(-5px);
+}
+ .newsletter {
+  padding: 4rem 0;
+  background: #2c3e50;
+  color: white;
+  text-align: center;
+}   
+ .newsletter {
+  padding: 4rem 0;
+  background: #2c3e50;
+  color: white;
+  text-align: center;
+}
+
+.newsletter-form {
+  max-width: 500px;
+  margin: 2rem auto;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.newsletter-input {
+  flex: 1;
+  min-width: 250px;
+  padding: 1rem;
+  border: none;
+  border-radius: 25px;
+  font-size: 1rem;
+}
+
+.newsletter-submit {
+  background: linear-gradient(45deg, #FF6B6B, #4ECDC4);
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: transform 0.3s ease;
+}
+
+.newsletter-submit:hover {
+  transform: translateY(-2px);
+}
+.hidden{
+display: none;
+}
+
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  background: #f5f5f5;
+  margin-top: 2rem;
+}
+footer {
+  background: #1a252f;
+  color: white;
+  padding: 3rem 0 1rem;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+ }
+
+.footer-section h3 {
+   margin-bottom: 1rem;
+   color: #4ECDC4;
+}
+
+.footer-section a {
+  color: #ccc;
+  text-decoration: none;
+  display: block;
+  margin: 0.5rem 0;
+  transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+   color: #FF6B6B;
+}
+
+ .footer-bottom {
+  text-align: center;
+  padding-top: 2rem;
+  border-top: 1px solid #334155;
+  color: #94a3b8;
+}
